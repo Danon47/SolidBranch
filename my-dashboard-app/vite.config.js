@@ -6,6 +6,8 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       external: ['react-icons'],
     },
